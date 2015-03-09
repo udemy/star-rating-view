@@ -14,19 +14,19 @@ struct TegStarRatingSettings {
   var numberOfStars = 5
   
   var starFillMode = TegStarFillMode.Half
-  var marginBetweenStars:CGFloat = -100 // -100 means relative to font size
+  var marginBetweenStars:CGFloat = 0 // -100 means relative to font size
   
   var starFont = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
   
   var starCharacterFilled = "★"
-  var starCharacterEmpty = "☆"
+  var starCharacterEmpty = "★"
   
-  var starColorFilled = UIColor(red: 1, green: 149/255, blue: 0, alpha: 1)
-  var starColorEmpty = UIColor(red: 1, green: 149/255, blue: 0, alpha: 1)
+  var starColorFilled = UIColor(red: 0.82, green: 0.23, blue: 0.24, alpha: 1)
+  var starColorEmpty = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1)
   
   var textFont = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
   var textColor = UIColor.grayColor()
-  var marginBetweenStarsAndText: CGFloat = -100 // -100 means relative to font size
+  var marginBetweenStarsAndText: CGFloat = 10 // -100 means relative to font size
   
   var correctFillLevelForPreciseMode = true // Needs to be true for ★ ☆ characters.
 }
